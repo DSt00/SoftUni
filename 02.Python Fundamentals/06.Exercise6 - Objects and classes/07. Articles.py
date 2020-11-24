@@ -14,4 +14,4 @@ class Article:
         self.title = new_title
 
     def __repr__(self):
-        return f'{self.title} = {self.content}: {self.author}'
+        return f'{self.title} - {self.content}: {self.author}'
