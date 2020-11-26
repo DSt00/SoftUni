@@ -26,7 +26,7 @@ elif legendary['motes'] >= 250:
     print('Dragonwrath obtained!')
     legendary['motes'] -= 250
 
-legendary = sorted(legendary.items(), key=lambda x: x[1], reverse=True)
+legendary = sorted(legendary.items(), key=lambda x: (-x[1], x[0]))
 junk = sorted(junk.items(), key=lambda x: (x[0]))
 legendary = {k: v for k, v in legendary}
 junk = {k: v for k, v in junk}
